@@ -62,7 +62,7 @@ const ChatBot: React.FC = () => {
       <Button
         onClick={handleToggleChat}
         className={`fixed bottom-4 right-4 w-14 h-14 rounded-full shadow-lg z-50 transition-all duration-300 ${
-          isOpen ? "bg-gray-600 rotate-90" : "bg-chatbot-primary"
+          isOpen ? "bg-gray-800 rotate-90" : "bg-black"
         }`}
       >
         {isOpen ? <X size={24} /> : <MessageCircle size={24} />}

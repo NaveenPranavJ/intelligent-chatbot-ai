@@ -40,7 +40,7 @@ const ChatWindow: React.FC<ChatWindowProps> = ({
       )}
     >
       {/* Header */}
-      <div className="p-4 border-b bg-chatbot-primary text-white rounded-t-2xl flex items-center justify-between">
+      <div className="p-4 border-b bg-black text-white rounded-t-2xl flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
             <span className="text-sm font-semibold">AI</span>

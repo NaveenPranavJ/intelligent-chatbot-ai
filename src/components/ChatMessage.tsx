@@ -20,7 +20,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message }) => {
     >
       {!isUser && (
         <div className="flex-shrink-0">
-          <div className="w-8 h-8 rounded-full bg-chatbot-primary flex items-center justify-center text-white">
+          <div className="w-8 h-8 rounded-full bg-black flex items-center justify-center text-white">
             <Bot size={16} />
           </div>
         </div>
@@ -29,15 +29,15 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message }) => {
         className={cn(
           "max-w-[80%] rounded-2xl px-4 py-2",
           isUser
-            ? "bg-chatbot-user text-gray-800 rounded-tr-none"
-            : "bg-chatbot-assistant text-gray-800 rounded-tl-none"
+            ? "bg-white text-black border border-gray-200 rounded-tr-none"
+            : "bg-gray-100 text-black rounded-tl-none"
         )}
       >
         <p className="text-sm">{message.content}</p>
       </div>
       {isUser && (
         <div className="flex-shrink-0">
-          <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-gray-600">
+          <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-black">
             <User size={16} />
           </div>
         </div>
